@@ -23,7 +23,13 @@
   min-height: 115px;
   display: flex;
   justify-content: center;
+  padding: 8px;
+  align-items: center;
 
   background-color: var(--color-accent);
   border-radius: var(--radius-sm);
+
+  p {
+    color: var(--text-inverse);
+  }
 }

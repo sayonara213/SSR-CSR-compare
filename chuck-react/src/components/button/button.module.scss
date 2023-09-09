@@ -19,14 +19,14 @@
   p {
     transition: all 0.2s ease-in-out;
 
-    color: black;
+    color: var(--color-text);
   }
 
   &:hover {
     background-color: var(--color-accent);
 
     p {
-      color: var(--color-text);
+      color: var(--text-inverse);
     }
   }
 }

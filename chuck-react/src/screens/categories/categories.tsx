@@ -8,7 +8,9 @@ const Categories = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.titleWrapper}>
-        <Paragraph>Categories</Paragraph>
+        <Paragraph size="lg" weight="bold">
+          Categories
+        </Paragraph>
       </div>
       <CategoriesList />
     </div>

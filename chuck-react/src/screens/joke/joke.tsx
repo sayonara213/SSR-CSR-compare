@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import styles from "./joke.module.scss";
 import { IMAGES } from "../../constants/images";
 import { Paragraph } from "../../components/paragraph/paragraph";
+import { useAppSelector } from "../../hooks/hooks";
 
 const Joke: FC = () => {
   const { joke, isLoading } = useAppSelector((store) => store.jokeReducer);
