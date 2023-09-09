@@ -1,0 +1,32 @@
+.button {
+  margin: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 60px;
+  background-color: var(--color-primary);
+  border-radius: var(--radius-sm);
+
+  box-shadow: 0 22px 80px 0 rgba(72, 70, 106, 0.1);
+
+  border: none;
+  cursor: pointer;
+
+  transition: all 0.2s ease-in-out;
+
+  p {
+    transition: all 0.2s ease-in-out;
+
+    color: black;
+  }
+
+  &:hover {
+    background-color: var(--color-accent);
+
+    p {
+      color: var(--color-text);
+    }
+  }
+}
