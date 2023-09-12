@@ -6,6 +6,7 @@ import { IMAGES } from "@/constants/images";
 import { Paragraph } from "@/components/global/paragraph/paragraph";
 import { useAppSelector } from "@/hooks/hooks";
 import Image from "next/image";
+import { Loader } from "@/components/global/loader/loader";
 
 const Joke: FC = () => {
   const { joke, isLoading } = useAppSelector((store) => store.jokeReducer);
@@ -16,7 +17,9 @@ const Joke: FC = () => {
         <Image className={styles.image} src={IMAGES.chuck} alt="joke" />
       </div>
       <div className={styles.jokeWrap}>
-        {!isLoading && (
+        {isLoading ? (
+          <Loader />
+        ) : (
           <Paragraph size="md">
             {joke.value.length > 0 ? joke.value : "Select a category first!"}
           </Paragraph>
