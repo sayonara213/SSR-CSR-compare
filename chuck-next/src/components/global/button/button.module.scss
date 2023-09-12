@@ -35,3 +35,18 @@
     height: 40px;
   }
 }
+
+.primary {
+  background-color: var(--color-accent);
+
+  width: 180px;
+  height: 70px;
+
+  p {
+    color: var(--text-inverse);
+  }
+
+  &:hover {
+    background-color: var(--color-accent-dark);
+  }
+}
